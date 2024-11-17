@@ -14,11 +14,6 @@ API_TOKEN = '8178599573:AAEXyUs1WG3Hz56ZtF8t6cVKTu48o9XIiZA'
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 
-keyboard = ReplyKeyboardMarkup(keyboard=[
-    [KeyboardButton(text='Рассчитать'), KeyboardButton(text='Информация',)],
-],
-    resize_keyboard=True,
-    input_field_placeholder='Введите текст')
 
 
 class UserState(StatesGroup):
