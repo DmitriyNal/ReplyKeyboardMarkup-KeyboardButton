@@ -27,7 +27,7 @@ class UserState(StatesGroup):
     weight = State()
 
 
-@dp.message(F.text.lower().contains('информация'))
+@dp.message(F.text.lower().contains('рассчитать'))
 async def set_age(message: Message, state=FSMContext):
     await state.set_state(UserState.age)
     await message.answer('Введите ваш возраст')
